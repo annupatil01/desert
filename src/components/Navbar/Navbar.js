@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import "./Navbar.css"
 
 function Navbar() {
@@ -9,9 +9,19 @@ function Navbar() {
       Deserts🍨
       </span>
     <div className="navbar-links">
-      <a href="/home" className="navbar-link">Home</a>
-      <a href="/contact"  className="navbar-link">Contact</a>
-      <a href="/about"  className="navbar-link">About</a>
+
+      <Link to="/home" className="navbar-link">
+         Home
+      </Link>
+
+      <Link to="/contact"  className="navbar-link">
+         Contact
+      </Link>
+
+      <Link to="/about"  className="navbar-link">
+         About
+      </Link>
+
     </div>
     </div>
   )
