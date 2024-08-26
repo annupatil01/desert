@@ -1,17 +1,26 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./index.css"
+
+import Home from "./views/Home/Home"
+import About from "./views/About/About"
+import Contact from "./views/Contact/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const curentPath = window.location.pathname;
+
+if (curentPath=="/Home"){
+    root.render(<Home/>)
+}
+else if(curentPath=="/About")
+{
+    root.render(<About/>)
+}
+else if(curentPath=="/Contact")
+    {
+        root.render(<Contact/>)
+    }
+else 
+{
+    root.render(<h1>404 Not Found</h1>)
+}    

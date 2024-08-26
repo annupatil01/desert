@@ -1,0 +1,19 @@
+.navbar{
+    background-color: burlywood;
+    color:black;
+    padding: 10px;
+    display: flex;
+}
+
+.navbar-link{
+   color: black;
+   text-decoration: underline;
+   margin: 0px 10px;
+}
+
+.brand-name{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 700px;
+}
